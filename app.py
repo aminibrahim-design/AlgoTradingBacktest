@@ -402,7 +402,7 @@ with st.sidebar:
     st.divider()
     st.header("Costs")
     fee_bps = st.number_input("Fee (bps per trade)", min_value=0.0, value=1.0, step=0.5)
-    slippage_bps = st.number_input("Slippage (bps per trade)", min_value=0.0, value=1.0, step=0.5)
+    slippage_bps = st.number_input("Spread", min_value=0.0, value=1.0, step=0.5)
 
     st.divider()
     run_btn = st.button("🚀 Backtest")
